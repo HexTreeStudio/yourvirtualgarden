@@ -1,10 +1,9 @@
-import Countdown from "react-countdown";
-
+import SetTimer from "../components/Timer";
 import Field from "../img/field.png";
 import "./FieldComponent.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { setWater, resetField } from "../store/slice/FieldSlice";
+import { setWater, resetField, setGrowing } from "../store/slice/FieldSlice";
 import { setValue } from "../store/slice/LabelSlice";
 import {
   GiDrop,
@@ -20,11 +19,11 @@ function FieldComponent({ id }) {
 
   let waterCan;
   let crop;
-  let isGrowing;
+  let cropContent;
 
   const handleClick = () => {
     dispatch(setWater(id));
-    isGrowing = true;
+    dispatch(setGrowing(id));
   };
 
   const gatherCrop = (crop) => {
@@ -87,11 +86,23 @@ function FieldComponent({ id }) {
     default:
   }
 
+  if (fieldData.isWatered) {
+    if (fieldData.isGrowing) {
+      cropContent = <SetTimer />;
+      setTimeout(() => {
+        dispatch(setGrowing(id));
+      }, 10000);
+    } else {
+      cropContent = crop;
+    }
+  }
+
   return (
     <div className="relative text-center">
       <img src={Field} alt="field" className="shadow-2xl" />
       {waterCan}
-      {fieldData.isWatered && crop}
+      {/* {fieldData.isWatered && crop} */}
+      {cropContent}
     </div>
   );
 }

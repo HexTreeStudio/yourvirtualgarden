@@ -7,46 +7,55 @@ const fieldsSlice = createSlice({
       id: 0,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
     {
       id: 1,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
     {
       id: 2,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
     {
       id: 3,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
     {
       id: 4,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
     {
       id: 5,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
     {
       id: 6,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
     {
       id: 7,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
     {
       id: 8,
       crop: "",
       isWatered: false,
+      isGrowing: false,
     },
   ],
 
@@ -67,6 +76,14 @@ const fieldsSlice = createSlice({
         }
       }
     },
+    setGrowing(state, action) {
+      for (let index = 0; index < state.length; index++) {
+        if (state[index].id === action.payload) {
+          state[index].isGrowing = !state[index].isGrowing;
+          break;
+        }
+      }
+    },
     resetField(state, action) {
       for (let index = 0; index < state.length; index++) {
         if (state[index].id === action.payload) {
@@ -79,5 +96,6 @@ const fieldsSlice = createSlice({
   },
 });
 
-export const { setCrop, setWater, resetField } = fieldsSlice.actions;
+export const { setCrop, setWater, resetField, setGrowing } =
+  fieldsSlice.actions;
 export const fieldsReducer = fieldsSlice.reducer;
