@@ -34,10 +34,10 @@ function FieldComponent({ id }) {
   if (fieldData.crop !== "") {
     waterCan = fieldData.isWatered || (
       <div
-        className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   cursor-water "
+        className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   cursor-water w-1/2 h-1/2"
         onClick={handleClick}
       >
-        <GiDrop className=" h-20 w-20 text-sky-500 animate-bounce" />
+        <GiDrop className=" h-20 w-20 text-sky-500 animate-bounce w-full h-full" />
       </div>
     );
   }
@@ -46,40 +46,40 @@ function FieldComponent({ id }) {
     case "carrot":
       crop = (
         <div
-          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set"
+          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2 "
           onClick={() => gatherCrop("carrot")}
         >
-          <GiCarrot className="h-28 w-28 text-orange-500" />
+          <GiCarrot className=" text-orange-500 w-full h-full" />
         </div>
       );
       break;
     case "corn":
       crop = (
         <div
-          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set"
+          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2"
           onClick={() => gatherCrop("corn")}
         >
-          <GiCorn className="h-28 w-28 text-yellow-500" />
+          <GiCorn className="h-28 w-28 text-yellow-500 w-full h-full" />
         </div>
       );
       break;
     case "pepper":
       crop = (
         <div
-          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set"
+          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2"
           onClick={() => gatherCrop("pepper")}
         >
-          <GiChiliPepper className="h-28 w-28 text-red-500" />
+          <GiChiliPepper className="h-28 w-28 text-red-500 w-full h-full" />
         </div>
       );
       break;
     case "wheat":
       crop = (
         <div
-          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   cursor-set"
+          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   cursor-set w-1/2 h-1/2"
           onClick={() => gatherCrop("wheat")}
         >
-          <GiWheat className="h-28 w-28 text-yellow-600" />
+          <GiWheat className="h-28 w-28 text-yellow-600 w-full h-full" />
         </div>
       );
       break;
@@ -99,7 +99,7 @@ function FieldComponent({ id }) {
 
   return (
     <div className="relative text-center">
-      <img src={Field} alt="field" className="shadow-2xl" />
+      <img src={Field} alt="field" className="w-40" />
       {waterCan}
       {/* {fieldData.isWatered && crop} */}
       {cropContent}
