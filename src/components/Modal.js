@@ -9,7 +9,7 @@ function Modal(props) {
       ></div>
       <div className=" absolute w-[60rem] top-28 left-1/2 -translate-x-1/2 p-10 bg-white  rounded-3xl">
         <h1 className="text-4xl mb-20 text-center">
-          Vítej v mojí React hře s názvem "Your Virtual Farm"
+          Vítej v mojí React hře s názvem "Your Virtual Garden"
         </h1>
         <p className="text-2xl mb-2">Cílem hry je otevřít všechny sazenice.</p>
         <p className="text-2xl mb-14">Pravidla jsou jednoduchá:</p>
