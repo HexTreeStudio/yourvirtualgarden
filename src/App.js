@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
 function App() {
+  document.addEventListener(
+    "mousedown",
+    function (event) {
+      if (event.detail > 1) {
+        event.preventDefault();
+        // of course, you still do not know what you prevent here...
+        // You could also check event.ctrlKey/event.shiftKey/event.altKey
+        // to not prevent something useful.
+      }
+    },
+    false
+  );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="max-w-7xl h-screen p-2 m-auto">
+      <Navbar />
+      <Main />
     </div>
   );
 }

@@ -1,0 +1,7 @@
+.cursor-set:hover {
+  cursor: url(/src/img/sickle.png) 50 30, auto;
+}
+
+.cursor-water:hover {
+  cursor: url(/src/img/watering-can.png) 50 30, auto;
+}
