@@ -8,6 +8,7 @@ const fieldsSlice = createSlice({
       crop: "",
       isWatered: false,
       isGrowing: false,
+      growStage: 0,
     },
     {
       id: 1,

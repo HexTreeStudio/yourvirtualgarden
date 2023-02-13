@@ -13,3 +13,7 @@ body {
   background-color: #58d7ff;
   height: 100vh;
 }
+
+.is-disabled {
+  display: none;
+}

@@ -1,5 +1,5 @@
 import SetTimer from "../components/Timer";
-import Field from "../img/field.png";
+import Field from "../img/field.jpg";
 import "./FieldComponent.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -20,6 +20,7 @@ function FieldComponent({ id }) {
   let waterCan;
   let crop;
   let cropContent;
+  let fieldImg = Field;
 
   const handleClick = () => {
     dispatch(setWater(id));
@@ -99,9 +100,8 @@ function FieldComponent({ id }) {
 
   return (
     <div className="relative text-center">
-      <img src={Field} alt="field" className="w-40" />
+      <img src={fieldImg} alt="field" className="w-40 rounded-3xl " />
       {waterCan}
-      {/* {fieldData.isWatered && crop} */}
       {cropContent}
     </div>
   );
