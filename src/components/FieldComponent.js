@@ -5,13 +5,12 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { setWater, resetField, setGrowing } from "../store/slice/FieldSlice";
 import { setValue } from "../store/slice/LabelSlice";
-import {
-  GiDrop,
-  GiChiliPepper,
-  GiCarrot,
-  GiCorn,
-  GiWheat,
-} from "react-icons/gi";
+import { GiDrop } from "react-icons/gi";
+import GrowStage from "./GrowStage";
+import Carrot from "../img/carrot.png";
+import Corn from "../img/corn.png";
+import Pepper from "../img/chili.png";
+import Wheat from "../img/wheat.png";
 
 function FieldComponent({ id }) {
   const dispatch = useDispatch();
@@ -50,7 +49,11 @@ function FieldComponent({ id }) {
           className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2 "
           onClick={() => gatherCrop("carrot")}
         >
-          <GiCarrot className=" text-orange-500 w-full h-full" />
+          <img
+            src={Carrot}
+            className=" w-full h-full p-2 bg-slate-200/40 rounded-xl"
+            alt="carrot"
+          />
         </div>
       );
       break;
@@ -60,7 +63,11 @@ function FieldComponent({ id }) {
           className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2"
           onClick={() => gatherCrop("corn")}
         >
-          <GiCorn className="h-28 w-28 text-yellow-500 w-full h-full" />
+          <img
+            src={Corn}
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl"
+            alt="corn"
+          />
         </div>
       );
       break;
@@ -70,7 +77,11 @@ function FieldComponent({ id }) {
           className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2"
           onClick={() => gatherCrop("pepper")}
         >
-          <GiChiliPepper className="h-28 w-28 text-red-500 w-full h-full" />
+          <img
+            src={Pepper}
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl"
+            alt="pepper"
+          />
         </div>
       );
       break;
@@ -80,7 +91,11 @@ function FieldComponent({ id }) {
           className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   cursor-set w-1/2 h-1/2"
           onClick={() => gatherCrop("wheat")}
         >
-          <GiWheat className="h-28 w-28 text-yellow-600 w-full h-full" />
+          <img
+            src={Wheat}
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl"
+            alt="wheat"
+          />
         </div>
       );
       break;
@@ -98,13 +113,20 @@ function FieldComponent({ id }) {
     }
   }
 
-  return (
-    <div className="relative text-center">
+  const imageFiled =
+    fieldData.isGrowing || fieldData.isWatered ? (
+      <GrowStage />
+    ) : (
       <img
         src={fieldImg}
         alt="field"
         className="w-40 rounded-3xl max-sm:rounded-xl"
       />
+    );
+
+  return (
+    <div className="relative text-center">
+      {imageFiled}
       {waterCan}
       {cropContent}
     </div>
