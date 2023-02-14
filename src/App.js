@@ -15,6 +15,9 @@ function App() {
     },
     false
   );
+  window.ondragstart = function () {
+    return false;
+  };
 
   return (
     <div className="max-w-7xl h-screen p-2 m-auto">
