@@ -100,7 +100,11 @@ function FieldComponent({ id }) {
 
   return (
     <div className="relative text-center">
-      <img src={fieldImg} alt="field" className="w-40 rounded-3xl " />
+      <img
+        src={fieldImg}
+        alt="field"
+        className="w-40 rounded-3xl max-sm:rounded-xl"
+      />
       {waterCan}
       {cropContent}
     </div>

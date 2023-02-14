@@ -14,7 +14,7 @@ function ModalPage() {
       {isVisible && <Modal onClick={togleVisibility} />}
       <button
         onClick={togleVisibility}
-        className="absolute right-5 bottom-5 p-2 border-green-500  bg-gray-200 hover:bg-gray-100 border-4 rounded-full"
+        className="absolute right-5 top-[7.5rem]  p-2 border-green-500  bg-gray-200 hover:bg-gray-100 border-4 rounded-full text-xs"
       >
         Otevřít nápovědu
       </button>
