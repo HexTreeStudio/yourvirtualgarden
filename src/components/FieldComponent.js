@@ -51,7 +51,7 @@ function FieldComponent({ id }) {
         >
           <img
             src={Carrot}
-            className=" w-full h-full p-2 bg-slate-200/40 rounded-xl"
+            className=" w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125"
             alt="carrot"
           />
         </div>
@@ -65,7 +65,7 @@ function FieldComponent({ id }) {
         >
           <img
             src={Corn}
-            className="w-full h-full p-2 bg-slate-200/40 rounded-xl"
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125"
             alt="corn"
           />
         </div>
@@ -79,7 +79,7 @@ function FieldComponent({ id }) {
         >
           <img
             src={Pepper}
-            className="w-full h-full p-2 bg-slate-200/40 rounded-xl"
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125"
             alt="pepper"
           />
         </div>
@@ -93,7 +93,7 @@ function FieldComponent({ id }) {
         >
           <img
             src={Wheat}
-            className="w-full h-full p-2 bg-slate-200/40 rounded-xl"
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125"
             alt="wheat"
           />
         </div>
