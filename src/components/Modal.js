@@ -7,7 +7,7 @@ function Modal(props) {
         onClick={props.onClick}
         className=" absolute inset-0 bg-gray-300 opacity-80"
       ></div>
-      <div className=" absolute w-[60rem] max-lg:w-[35rem] max-sm:w-72 top-28 left-1/2 -translate-x-1/2 p-10 bg-white  rounded-3xl max-sm:p-6">
+      <div className=" absolute w-[60rem] max-lg:w-[35rem] max-sm:w-72 top-20 max-lg:top-14 max-sm:top-6 left-1/2 -translate-x-1/2 p-10 bg-white  rounded-3xl max-sm:p-6">
         <h1 className="text-4xl max-lg:text-2xl max-sm:text-base mb-20 max-lg:mb-12  max-sm:mb-6 text-center">
           Vítej v mojí React hře s názvem "Your Virtual Garden"
         </h1>

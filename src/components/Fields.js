@@ -6,7 +6,7 @@ function Fields() {
   return (
     <div
       style={{ backgroundImage: `url(${Grass})` }}
-      className="basis-full bg-orange-300 border-4 border-orange-900 rounded-r-2xl py-14 px-20 max-md:px-12 max-sm:px-2 text-center "
+      className="relative basis-full bg-orange-300 border-4 border-orange-900 rounded-r-2xl py-14 px-20 max-md:px-12 max-sm:px-2 text-center "
     >
       <div className="grid grid-cols-3  gap-10 auto-cols-fr  inline-grid max-lg:gap-5 max-sm:gap-5 ">
         <FieldComponent id={0} />
@@ -19,6 +19,9 @@ function Fields() {
         <FieldComponent id={7} />
         <FieldComponent id={8} />
       </div>
+      <p className="absolute left-1/2 bottom-0 -translate-x-1/2 text-xs w-full max-sm:text-[8px] hidden">
+        Vytvořilo Hex Tree Studio (Lukáš Plesník)
+      </p>
     </div>
   );
 }
