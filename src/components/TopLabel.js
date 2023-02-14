@@ -6,7 +6,7 @@ function TopLabel({ value, icon }) {
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="flex justify-between items-center w-24 max-lg:w-20">
           {icon}
-          <span className="text-2xl max-lg:text-xl max-md:text-base">
+          <span className="text-2xl max-lg:text-xl max-md:text-base font-['Bungee']">
             {value}
           </span>
         </div>

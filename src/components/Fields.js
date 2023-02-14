@@ -19,9 +19,6 @@ function Fields() {
         <FieldComponent id={7} />
         <FieldComponent id={8} />
       </div>
-      <p className="absolute left-1/2 bottom-0 -translate-x-1/2 text-xs w-full max-sm:text-[8px] hidden">
-        Vytvořilo Hex Tree Studio (Lukáš Plesník)
-      </p>
     </div>
   );
 }
