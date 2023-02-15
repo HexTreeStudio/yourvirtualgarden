@@ -3,7 +3,7 @@ import Fields from "./Fields";
 
 function Main() {
   return (
-    <div className="flex">
+    <div className="flex shadow-lg rounded-2xl ">
       <SideBar />
       <Fields />
     </div>

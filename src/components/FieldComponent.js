@@ -46,12 +46,12 @@ function FieldComponent({ id }) {
     case "carrot":
       crop = (
         <div
-          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2 "
+          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2 hover:scale-110 "
           onClick={() => gatherCrop("carrot")}
         >
           <img
             src={Carrot}
-            className=" w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125"
+            className=" w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125 animation-pulse"
             alt="carrot"
           />
         </div>
@@ -60,12 +60,12 @@ function FieldComponent({ id }) {
     case "corn":
       crop = (
         <div
-          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2"
+          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2 hover:scale-110"
           onClick={() => gatherCrop("corn")}
         >
           <img
             src={Corn}
-            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125"
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125 animation-pulse"
             alt="corn"
           />
         </div>
@@ -74,12 +74,12 @@ function FieldComponent({ id }) {
     case "pepper":
       crop = (
         <div
-          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2"
+          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-set w-1/2 h-1/2 hover:scale-110"
           onClick={() => gatherCrop("pepper")}
         >
           <img
             src={Pepper}
-            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125"
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125 animation-pulse"
             alt="pepper"
           />
         </div>
@@ -88,12 +88,12 @@ function FieldComponent({ id }) {
     case "wheat":
       crop = (
         <div
-          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   cursor-set w-1/2 h-1/2"
+          className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   cursor-set w-1/2 h-1/2 hover:scale-110"
           onClick={() => gatherCrop("wheat")}
         >
           <img
             src={Wheat}
-            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125"
+            className="w-full h-full p-2 bg-slate-200/40 rounded-xl max-[420px]:scale-125 animation-pulse"
             alt="wheat"
           />
         </div>

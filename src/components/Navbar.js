@@ -5,7 +5,7 @@ import { GiChiliPepper, GiCarrot, GiCorn, GiWheat } from "react-icons/gi";
 function Navbar() {
   const values = useSelector((state) => state.labels);
   return (
-    <header className="bg-orange-300 h-28 border-4 border-orange-900 rounded-2xl flex items-center justify-between mb-10">
+    <header className="bg-orange-300 h-28 border-4 border-orange-900 rounded-2xl flex items-center justify-between mb-10 shadow-lg">
       <span
         className="text-2xl text-center max-lg:text-xl max-md:text-xl w-60 max-sm:w-36
      max-[430px]:text-base max-[430px]:w-18  p-2 font-['Bungee']"
