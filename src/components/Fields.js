@@ -6,9 +6,9 @@ function Fields() {
   return (
     <div
       style={{ backgroundImage: `url(${Grass})` }}
-      className="relative basis-full bg-orange-300 border-4 border-orange-900 rounded-r-2xl py-14 px-20 max-md:px-12 max-sm:px-2 text-center "
+      className="relative basis-full bg-orange-300 border-4 border-orange-900 min-[374px]:rounded-r-2xl py-14 px-20 max-md:px-12 max-sm:px-2 text-center max-[374px]:rounded-b-2xl"
     >
-      <div className="grid grid-cols-3  gap-10 auto-cols-fr  inline-grid max-lg:gap-5 max-sm:gap-5 ">
+      <div className="grid grid-cols-3  gap-10 auto-cols-fr  inline-grid max-lg:gap-5 max-sm:gap-5 max-[374px]:gap-2 ">
         <FieldComponent id={0} />
         <FieldComponent id={1} />
         <FieldComponent id={2} />

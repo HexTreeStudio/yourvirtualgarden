@@ -8,7 +8,7 @@ import Wheat from "../img/wheat.png";
 function SideBar() {
   const barState = useSelector((state) => state.sidebar);
   return (
-    <div className="flex flex-col bg-orange-300 border-y-4 border-l-4 border-orange-900 rounded-l-2xl py-10 max-sm:py-2 justify-between ">
+    <div className="flex min-[374px]:flex-col bg-orange-300 min-[374px]:border-y-4 min-[374px]:border-l-4 border-orange-900 min-[374px]:rounded-l-2xl py-10 max-sm:py-2 max-[374px]:rounded-t-2xl  justify-between max-[374px]:border-x-4 max-[374px]:border-t-4  ">
       <SideLabel
         crop={
           <img

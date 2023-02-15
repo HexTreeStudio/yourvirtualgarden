@@ -29,7 +29,7 @@ function SideLabel(props) {
         onClick={() => handleUnlock(props.cropType)}
       >
         <img src={label} alt="label" />
-        <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 cursor-pointer  ">
+        <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 max-sm:pt-1.5  cursor-pointer  ">
           <GiPadlock className="w-20 h-20 max-lg:w-14 max-lg:h-14 max-[430px]:w-9 max-[430px]:h-9" />
         </div>
       </div>
@@ -41,7 +41,7 @@ function SideLabel(props) {
         onClick={handleClick}
       >
         <img src={label} alt="label" />
-        <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 cursor-pointer  ">
+        <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 max-sm:pt-1.5 cursor-pointer  ">
           {props.crop}
         </div>
       </div>
