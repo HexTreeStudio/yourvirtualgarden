@@ -17,7 +17,7 @@ function Modal(props) {
         <p className="text-2xl max-lg:text-xl max-sm:text-xl mb-10 max-lg:mb-6 max-sm:mb-8">
           Pravidla jsou jednoduchá:
         </p>
-        <ol className="text-sm max-sm:text-base list-decimal list-inside flex flex-col gap-3 mb-20 max-lg:gap-3 max-sm:gap-3 max-sm:mb-20">
+        <ol className="text-sm list-decimal list-inside flex flex-col gap-3 mb-20 max-lg:gap-3 max-sm:gap-3 max-sm:mb-20 max-sm:text-base max-[374px]:text-sm">
           <li className="">Využij pole pro pěstování plodin.</li>
           <li>
             Semínka zasadíš tak, že klikneš na ikonku plodiny v levém menu.
