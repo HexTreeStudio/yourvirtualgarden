@@ -8,12 +8,12 @@ import Wheat from "../img/wheat.png";
 function SideBar() {
   const barState = useSelector((state) => state.sidebar);
   return (
-    <div className="flex min-[374px]:flex-col bg-orange-300 min-[374px]:border-y-4 min-[374px]:border-l-4 border-orange-900 min-[374px]:rounded-l-2xl py-10 max-sm:py-2 max-[374px]:rounded-t-2xl  justify-between max-[374px]:border-x-4 max-[374px]:border-t-4  ">
+    <div className="side-bar flex bg-orange-300 border-orange-900 py-10 justify-between min-[374px]:flex-col min-[374px]:border-y-4 min-[374px]:border-l-4 min-[374px]:rounded-l-2xl max-sm:py-2 max-[374px]:rounded-t-2xl max-[374px]:border-x-4 max-[374px]:border-t-4">
       <SideLabel
         crop={
           <img
             src={Carrot}
-            className="  max-lg:w-14  max-[430px]:w-11  text-orange-500 bg-slate-200/50 rounded-lg p-2"
+            className="rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-[430px]:w-11"
             alt="carrot"
           />
         }
@@ -24,7 +24,7 @@ function SideBar() {
         crop={
           <img
             src={Corn}
-            className=" max-lg:w-14  max-[430px]:w-11  text-yellow-500 bg-slate-200/50 rounded-lg p-2"
+            className="rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-[430px]:w-11"
             alt="corn"
           />
         }
@@ -35,7 +35,7 @@ function SideBar() {
         crop={
           <img
             src={Pepper}
-            className="max-lg:w-14  max-[430px]:w-11 text-red-500 bg-slate-200/50 rounded-lg p-2"
+            className="rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-[430px]:w-11"
             alt="pepper"
           />
         }
@@ -46,7 +46,7 @@ function SideBar() {
         crop={
           <img
             src={Wheat}
-            className=" max-lg:w-14  max-[430px]:w-11  text-yellow-600 bg-slate-200/50 rounded-lg p-2"
+            className="rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-[430px]:w-11"
             alt="wheat"
           />
         }

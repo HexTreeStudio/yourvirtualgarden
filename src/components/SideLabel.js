@@ -25,11 +25,11 @@ function SideLabel(props) {
   if (props.state.isLocked) {
     return (
       <div
-        className="w-36 h-36 max-lg:w-24 max-lg:h-24 max-[430px]:w-20 max-[430px]:h-20 flex items-center relative"
+        className="relative flex items-center w-36 h-36 max-lg:w-24 max-lg:h-24 max-[430px]:w-20 max-[430px]:h-20"
         onClick={() => handleUnlock(props.cropType)}
       >
         <img src={label} alt="label" />
-        <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 max-sm:pt-1.5  cursor-pointer  ">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 cursor-pointer max-sm:pt-1.5">
           <GiPadlock className="w-20 h-20 max-lg:w-14 max-lg:h-14 max-[430px]:w-9 max-[430px]:h-9" />
         </div>
       </div>
@@ -37,11 +37,11 @@ function SideLabel(props) {
   } else {
     return (
       <div
-        className="w-36 h-36 max-lg:w-24 max-lg:h-24 max-[430px]:w-20 max-[430px]:h-20 flex items-center relative"
+        className="relative flex items-center w-36 h-36 max-lg:w-24 max-lg:h-24 max-[430px]:w-20 max-[430px]:h-20"
         onClick={handleClick}
       >
         <img src={label} alt="label" />
-        <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 max-sm:pt-1.5 cursor-pointer  ">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 cursor-pointer max-sm:pt-1.5">
           {props.crop}
         </div>
       </div>
