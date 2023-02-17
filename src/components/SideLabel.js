@@ -40,7 +40,7 @@ function SideLabel(props) {
         className="relative flex items-center w-36 h-36 max-lg:w-24 max-lg:h-24 max-[430px]:w-20 max-[430px]:h-20"
         onClick={handleClick}
       >
-        <img src={label} alt="label" className="w-fit h-fit" />
+        <img src={label} alt="label" className="w-fit" />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pt-2.5 cursor-pointer max-sm:pt-1.5">
           {props.crop}
         </div>
