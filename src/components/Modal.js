@@ -28,7 +28,7 @@ function Modal(props) {
             Po sklizení min. 5 kusů si můžeš otevřít další plodinu ve sloupci.
           </li>
           <li>Novou plodinu otevřeš tak, že klikneš na zámek.</li>
-          <li>Pokračuješ tak dlouho, dokud nemáš otevřeny všechny plodiny</li>
+          <li>Pokračuješ tak dlouho, dokud nemáš otevřeny všechny plodiny.</li>
           <li>
             Až otevřeš všechny plodiny, můžeš pokračovat v sázení a nebo hru
             zavřít.
