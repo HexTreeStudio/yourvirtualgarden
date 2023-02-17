@@ -13,7 +13,7 @@ function SideBar() {
         crop={
           <img
             src={Carrot}
-            className="w-fit h-fit rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-lg:h-14 max-[430px]:w-11 max-[430px]:h-11"
+            className="w-fit  rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-lg:h-14 max-[430px]:w-11 max-[430px]:h-11"
             alt="carrot"
           />
         }
@@ -24,7 +24,7 @@ function SideBar() {
         crop={
           <img
             src={Corn}
-            className="w-fit h-fit rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-lg:h-14 max-[430px]:w-11 max-[430px]:h-11"
+            className="w-fit  rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-lg:h-14 max-[430px]:w-11 max-[430px]:h-11"
             alt="corn"
           />
         }
@@ -35,7 +35,7 @@ function SideBar() {
         crop={
           <img
             src={Pepper}
-            className="w-fit h-fit rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-lg:h-14 max-[430px]:w-11 max-[430px]:h-11"
+            className="w-fit  rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-lg:h-14 max-[430px]:w-11 max-[430px]:h-11"
             alt="pepper"
           />
         }
@@ -46,7 +46,7 @@ function SideBar() {
         crop={
           <img
             src={Wheat}
-            className="w-fit h-fit rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-lg:h-14 max-[430px]:w-11 max-[430px]:h-11"
+            className="w-fit rounded-lg p-2 bg-slate-200/50 max-lg:w-14 max-lg:h-14 max-[430px]:w-11 max-[430px]:h-11"
             alt="wheat"
           />
         }
