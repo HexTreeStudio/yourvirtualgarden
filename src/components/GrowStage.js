@@ -35,7 +35,7 @@ function GrowStage() {
     <img
       src={fieldImg}
       alt="field"
-      className="w-40 h-fit rounded-3xl max-sm:rounded-xl "
+      className="w-40 h-40 rounded-3xl max-sm:rounded-xl "
     />
   );
 }
