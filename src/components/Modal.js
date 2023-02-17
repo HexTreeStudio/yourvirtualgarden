@@ -8,16 +8,16 @@ function Modal(props) {
         className=" absolute inset-0 bg-gray-300 opacity-80"
       ></div>
       <div className=" absolute w-[60rem] max-lg:w-[35rem] top-20 -translate-x-1/2 p-10 bg-white max-sm:w-full max-sm:h-full max-sm:top-0 max-lg:top-14 max-sm:top-0 left-1/2 sm:rounded-3xl max-sm:p-6">
-        <h1 className="text-4xl text-center max-lg:text-3xl max-sm:text-2xl mb-20 max-lg:mb-12 max-sm:mb-12">
+        <h1 className="text-4xl text-center mb-20 max-lg:text-3xl max-sm:text-2xl max-lg:mb-12 max-sm:mb-12 max-[374px]:mb-6 max-[374px]:text-xl  ">
           Vítej v mojí React hře s názvem "Virtuální zahrada"
         </h1>
-        <p className="text-2xl max-lg:text-xl max-sm:text-xl">
+        <p className="text-2xl max-lg:text-xl max-sm:text-xl max-[374px]:text-base">
           Cílem hry je otevřít všechny sazenice.
         </p>
-        <p className="text-2xl max-lg:text-xl max-sm:text-xl mb-10 max-lg:mb-6 max-sm:mb-8">
+        <p className="text-2xl max-lg:text-xl max-sm:text-xl mb-10 max-lg:mb-6 max-sm:mb-8 max-[374px]:text-base max-[374px]:mb-4 max-[374px]:border-b-2 max-[374px]:pb-2">
           Pravidla jsou jednoduchá:
         </p>
-        <ol className="text-sm list-decimal list-inside flex flex-col gap-3 mb-20 max-lg:gap-3 max-sm:gap-3 max-sm:mb-20 max-sm:text-base max-[374px]:text-sm">
+        <ol className="text-sm list-decimal list-inside flex flex-col gap-3 mb-20 max-lg:gap-3 max-sm:gap-3 max-sm:mb-20 max-sm:text-base max-[374px]:text-xs">
           <li className="">Využij pole pro pěstování plodin.</li>
           <li>
             Semínka zasadíš tak, že klikneš na ikonku plodiny v levém menu.
