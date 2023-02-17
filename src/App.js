@@ -20,11 +20,13 @@ function App() {
   };
 
   return (
-    <div className="max-w-7xl h-screen p-2 m-auto">
-      <Navbar />
-      <Main />
-      <ModalPage />
-    </div>
+    <React.StrictMode>
+      <div className="max-w-7xl h-screen p-2 m-auto">
+        <Navbar />
+        <Main />
+        <ModalPage />
+      </div>
+    </React.StrictMode>
   );
 }
 
