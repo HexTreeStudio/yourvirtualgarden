@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import ModalPage from "./components/ModalPage";
+import React from "react";
 
 function App() {
   document.addEventListener(
