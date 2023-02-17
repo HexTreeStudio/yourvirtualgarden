@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import ModalPage from "./components/ModalPage";
-import React from "react";
 
 function App() {
   document.addEventListener(
@@ -21,13 +20,11 @@ function App() {
   };
 
   return (
-    <React.StrictMode>
-      <div className="max-w-7xl h-screen p-2 m-auto">
-        <Navbar />
-        <Main />
-        <ModalPage />
-      </div>
-    </React.StrictMode>
+    <div className="max-w-7xl h-screen p-2 m-auto">
+      <Navbar />
+      <Main />
+      <ModalPage />
+    </div>
   );
 }
 
