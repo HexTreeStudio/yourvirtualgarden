@@ -1,5 +1,5 @@
 import SetTimer from "../components/Timer";
-import Field from "../img/field.jpg";
+import Field from "../img/field.webp";
 import "./FieldComponent.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";

@@ -1,4 +1,4 @@
-import label from "../img/label_1.png";
+import label from "../img/label_1.webp";
 function TopLabel({ value, icon }) {
   return (
     <div className="w-40 max-lg:w-32 max-md:w-28 relative max-[374px]:w-20 ">

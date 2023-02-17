@@ -1,4 +1,4 @@
-import label from "../img/label_2.png";
+import label from "../img/label_2.webp";
 import { useDispatch, useSelector } from "react-redux";
 import { setCrop } from "../store/slice/FieldSlice";
 import { GiPadlock } from "react-icons/gi";

@@ -1,4 +1,4 @@
-import Grass from "../img/grass.png";
+import Grass from "../img/grass.webp";
 
 import FieldComponent from "./FieldComponent";
 

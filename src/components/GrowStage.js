@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-import Field2 from "../img/field_2.jpg";
-import Field3 from "../img/field_3.jpg";
-import Field from "../img/field.jpg";
+import Field2 from "../img/field_2.webp";
+import Field3 from "../img/field_3.webp";
+import Field from "../img/field.webp";
 
 function GrowStage() {
   const [growStage, setGrowStage] = useState(0);
